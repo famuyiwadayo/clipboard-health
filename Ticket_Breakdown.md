@@ -24,5 +24,5 @@ The process to allow Facilities to generate a custom ID for the Agents they work
 
 - We should have a `updateAgentId` function that takes the `customId` and a `facilityId` that allows the facility to update the Agent ID.
 
-- When a facility wants to generate a report for an Agent they work with, they should be able to call a `getAgentShifts` which takes in the Agent's `customId` and the `facilityId` and `quarter` and returns all the shifts that Agent worked within the Facility for that given quarter.
+- When a facility wants to generate a report for an Agent they work with, they should be able to call a `getAgentShifts` which takes in the Agent's `customId` and the `facilityId` and `quarter` and returns all the shifts that Agent worked within the Facility for that given quarter, then the `generateReport` can be called to convert the data into a PDF.
 
