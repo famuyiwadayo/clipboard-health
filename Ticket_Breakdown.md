@@ -16,3 +16,13 @@ Based on the information given, break this ticket down into 2-5 individual ticke
 You will be graded on the level of detail in each ticket, the clarity of the execution plan within and between tickets, and the intelligibility of your language. You don't need to be a native English speaker, but please proof-read your work.
 
 ## Your Breakdown Here
+
+
+The process to allow Facilities to generate a custom ID for the Agents they work with should work like this:
+
+- The Agents table should be updated to reflect the `customId` a facility needs to apply in the database.
+
+- We should have a `updateAgentId` function that takes the `customId` and a `facilityId` that allows the facility to update the Agent ID.
+
+- When a facility wants to generate a report for an Agent they work with, they should be able to call a `getAgentShifts` which takes in the Agent's `customId` and the `facilityId` and `quarter` and returns all the shifts that Agent worked within the Facility for that given quarter.
+
